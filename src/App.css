@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Trickster";
-    src: url('../public/assets/Vazir-Regular-FD.woff2')
+    src: url('/public/assets/font/Vazir-Regular-FD.woff2')
   }
   *{
     font-family: Trickster;

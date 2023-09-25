@@ -1,16 +1,20 @@
 import AddremoveBtn from "./addremovbtn"
 import { useState } from "react"
 import Bill from "./bill"
-function Card({ id, title, price, image }) {
+function Card({ id, title, price, image, onclick }) {
     const [count, setcount] = useState(0)
     const increase = () => {
         setcount(count + 1)
+        onclick(price)
     }
     const decrease = () => {
         if (count >= 1) {
             setcount(count - 1)
+            onclick(-price)
         }
     }
+
+
     return (
         <div id={id} className="card ">
             <div className="img-vb">

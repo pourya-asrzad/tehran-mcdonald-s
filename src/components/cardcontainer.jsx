@@ -1,12 +1,16 @@
 import Card from "./card"
 import data from '../data/data'
-function Cardcontainer() {
-    console.log(data);
+function Cardcontainer({ onsaveincontainer }) {
+    // let sumol = 0
+    function savedatachange(savenum) {
+        // sumol += 
+        onsaveincontainer(savenum)
+    }
     return (
         <div className="cardcontainer">
             {data.map((element) => {
                 return (
-                    <Card id={element.id} title={element.title} price={element.price} image={element.image} />
+                    <Card onclick={savedatachange} key={element.id} title={element.title} price={element.price} image={element.image} />
                 )
             })}
 
