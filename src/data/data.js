@@ -8,7 +8,7 @@ const data = [
   {
     id: 2,
     title: "همبرگر مخصوص ",
-    price: 10000,
+    price: 50000,
     image: "/images/hamburger.png",
   },
   {
